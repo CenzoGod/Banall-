@@ -123,7 +123,7 @@ async def banall(event):
              except Exception as e:
                    print(str(e))
                    await asyncio.sleep(0.1)
-         await RiZoeL.edit(f""Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ʀɪᴛᴇ. Aʟʟ ᴜsᴇʀs ʜᴀᴠᴇ ʙᴇᴇɴ ᴄᴀsᴛ ɪɴᴛᴏ ᴛʜᴇ ᴅᴀʀᴋ. Tʜᴇ ᴄʜᴀᴍʙᴇʀ ɪs ᴇᴍᴘᴛʏ, ᴀɴᴅ ᴛʜᴇ sʜᴀᴅᴏᴡs ʀᴇɪɢɴ ᴜɴᴄʜᴀʟʟᴇɴɢᴇᴅ. Wʜᴏ ᴅᴀʀᴇs ᴅᴇғʏ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ?! \n\n Bᴀɴɴᴇᴅ ᴜsᴇʀs: `{bann}` \n Tᴏᴛᴀʟ ᴜsᴇʀs: `{all}`")
+         await RiZoeL.edit(f"Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ʀɪᴛᴇ. Aʟʟ ᴜsᴇʀs ʜᴀᴠᴇ ʙᴇᴇɴ ᴄᴀsᴛ ɪɴᴛᴏ ᴛʜᴇ ᴅᴀʀᴋ. Tʜᴇ ᴄʜᴀᴍʙᴇʀ ɪs ᴇᴍᴘᴛʏ, ᴀɴᴅ ᴛʜᴇ sʜᴀᴅᴏᴡs ʀᴇɪɢɴ ᴜɴᴄʜᴀʟʟᴇɴɢᴇᴅ. Wʜᴏ ᴅᴀʀᴇs ᴅᴇғʏ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ?! \n\n Bᴀɴɴᴇᴅ ᴜsᴇʀs: `{bann}` \n Tᴏᴛᴀʟ ᴜsᴇʀs: `{all}`")
 
     
 @Riz.on(events.NewMessage(pattern="^/unbanall"))
