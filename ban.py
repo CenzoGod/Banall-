@@ -59,7 +59,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f“ **Wʜᴏ ᴅᴀʀᴇs sᴜᴍᴍᴏɴ ᴛʜᴇ Rᴇᴀᴘᴇʀ? Sᴘᴇᴀᴋ ʏᴏᴜʀ ᴘᴜʀᴘᴏsᴇ, ᴏʀ ғᴀᴄᴇ ᴛʜᴇ ᴄᴏɴsᴇǫᴜᴇɴᴄᴇs…** \n\n `{ms}` ms")
+        await event.edit(f" **Wʜᴏ ᴅᴀʀᴇs sᴜᴍᴍᴏɴ ᴛʜᴇ Rᴇᴀᴘᴇʀ? Sᴘᴇᴀᴋ ʏᴏᴜʀ ᴘᴜʀᴘᴏsᴇ, ᴏʀ ғᴀᴄᴇ ᴛʜᴇ ᴄᴏɴsᴇǫᴜᴇɴᴄᴇs…** \n\n `{ms}` ms")
 
 
 @Riz.on(events.NewMessage(pattern="^/kickall"))
