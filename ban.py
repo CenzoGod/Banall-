@@ -75,8 +75,8 @@ async def kickall(event):
          admin = RiZ.admin_rights
          creator = RiZ.creator
          if not admin and not creator:
-              return await event.reply("𝙸 𝚍𝚘𝚗'𝚝 𝙷𝚊𝚟𝚎 𝚜𝚞𝚏𝚏𝚒𝚌𝚒𝚎𝚗𝚝 𝚁𝚒𝚐𝚑𝚝𝚜!!")
-         RiZoeL = await Riz.send_message(event.chat_id, "**Tʜᴇ sᴘᴇᴇᴅ ᴏғ Rᴇᴀᴘᴇʀ ϟϟϟ **")
+              return await event.reply("I ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴇɴᴛ ʀɪɢʜᴛs!!")
+         RiZoeL = await Riz.send_message(event.chat_id, "Tʜᴇ sᴘᴇᴇᴅ ᴏғ Rᴇᴀᴘᴇʀ ϟϟϟ ")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -146,7 +146,7 @@ async def unban(event):
                  await msg.edit(str(ex))
               else:
                   p += 1
-         await msg.edit("{}: {} unbanned".format(event.chat_id, p))
+         await msg.edit("{}: {} Uɴʙᴀɴɴᴇᴅ".format(event.chat_id, p))
 
 
 @Riz.on(events.NewMessage(pattern="^/leave"))
@@ -177,7 +177,7 @@ async def _(e):
 @Riz.on(events.NewMessage(pattern="^/restart"))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "__Restarting__ !!!"
+        text = "__Rᴇsᴛᴀʀᴛɪɴɢ__ !!!"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await Riz.disconnect()
