@@ -59,7 +59,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f“ Wʜᴏ ᴅᴀʀᴇs sᴜᴍᴍᴏɴ ᴛʜᴇ Rᴇᴀᴘᴇʀ? Sᴘᴇᴀᴋ ʏᴏᴜʀ ᴘᴜʀᴘᴏsᴇ, ᴏʀ ғᴀᴄᴇ ᴛʜᴇ ᴄᴏɴsᴇǫᴜᴇɴᴄᴇs… \n\n `{ms}` ms")
+        await event.edit(f“ **Wʜᴏ ᴅᴀʀᴇs sᴜᴍᴍᴏɴ ᴛʜᴇ Rᴇᴀᴘᴇʀ? Sᴘᴇᴀᴋ ʏᴏᴜʀ ᴘᴜʀᴘᴏsᴇ, ᴏʀ ғᴀᴄᴇ ᴛʜᴇ ᴄᴏɴsᴇǫᴜᴇɴᴄᴇs…** \n\n `{ms}` ms")
 
 
 @Riz.on(events.NewMessage(pattern="^/kickall"))
@@ -76,7 +76,7 @@ async def kickall(event):
          creator = RiZ.creator
          if not admin and not creator:
               return await event.reply("I ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴇɴᴛ ʀɪɢʜᴛs!!")
-         RiZoeL = await Riz.send_message(event.chat_id, "Tʜᴇ sᴘᴇᴇᴅ ᴏғ Rᴇᴀᴘᴇʀ ϟϟϟ ")
+         RiZoeL = await Riz.send_message(event.chat_id, " **Tʜᴇ sᴘᴇᴇᴅ ᴏғ Rᴇᴀᴘᴇʀ ϟϟϟ** ")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -91,7 +91,7 @@ async def kickall(event):
              except Exception as e:
                     print(str(e))
                     await asyncio.sleep(0.1)
-         await RiZoeL.edit(f"Uꜱᴇʀꜱ ᴋɪᴄᴋᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ! \n\n ᴋɪᴄᴋᴇᴅ: `{kimk}` \n ᴛᴏᴛᴀʟ: `{all}`")
+         await RiZoeL.edit(f" Uꜱᴇʀꜱ ᴋɪᴄᴋᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ! \n\n ᴋɪᴄᴋᴇᴅ: `{kimk}` \n ᴛᴏᴛᴀʟ: `{all}`")
     
 
 @Riz.on(events.NewMessage(pattern="^/banall"))
@@ -108,7 +108,7 @@ async def banall(event):
          creator = RiZ.creator
          if not admin and not creator:
               return await event.reply("I ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴇɴᴛ ʀɪɢʜᴛs!!")
-         RiZoeL = await Riz.send_message(event.chat_id, "Vᴇʀɪʟʏ, ᴛʜᴇ ɪᴍᴘᴀᴄᴛ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ғᴀʟʟᴇɴ ᴜᴘᴏɴ ʏᴏᴜ. Lᴇᴛ ɴᴏᴛʜɪɴɢ ʙᴜᴛ sɪʟᴇɴᴄᴇ ʀᴇᴍᴀɪɴ")
+         RiZoeL = await Riz.send_message(event.chat_id, " **Vᴇʀɪʟʏ, ᴛʜᴇ ɪᴍᴘᴀᴄᴛ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ғᴀʟʟᴇɴ ᴜᴘᴏɴ ʏᴏᴜ. Lᴇᴛ ɴᴏᴛʜɪɴɢ ʙᴜᴛ sɪʟᴇɴᴄᴇ ʀᴇᴍᴀɪɴ** ")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
          all = 0
@@ -123,7 +123,7 @@ async def banall(event):
              except Exception as e:
                    print(str(e))
                    await asyncio.sleep(0.1)
-         await RiZoeL.edit(f"Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ʀɪᴛᴇ. Aʟʟ ᴜsᴇʀs ʜᴀᴠᴇ ʙᴇᴇɴ ᴄᴀsᴛ ɪɴᴛᴏ ᴛʜᴇ ᴅᴀʀᴋ. Tʜᴇ ᴄʜᴀᴍʙᴇʀ ɪs ᴇᴍᴘᴛʏ, ᴀɴᴅ ᴛʜᴇ sʜᴀᴅᴏᴡs ʀᴇɪɢɴ ᴜɴᴄʜᴀʟʟᴇɴɢᴇᴅ. Wʜᴏ ᴅᴀʀᴇs ᴅᴇғʏ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ?! \n\n Bᴀɴɴᴇᴅ ᴜsᴇʀs: `{bann}` \n Tᴏᴛᴀʟ ᴜsᴇʀs: `{all}`")
+         await RiZoeL.edit(f" **Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ᴛʜᴇ ʀɪᴛᴇ. Aʟʟ ᴜsᴇʀs ʜᴀᴠᴇ ʙᴇᴇɴ ᴄᴀsᴛ ɪɴᴛᴏ ᴛʜᴇ ᴅᴀʀᴋ. Tʜᴇ ᴄʜᴀᴍʙᴇʀ ɪs ᴇᴍᴘᴛʏ, ᴀɴᴅ ᴛʜᴇ sʜᴀᴅᴏᴡs ʀᴇɪɢɴ ᴜɴᴄʜᴀʟʟᴇɴɢᴇᴅ. Wʜᴏ ᴅᴀʀᴇs ᴅᴇғʏ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ?!** \n\n Bᴀɴɴᴇᴅ ᴜsᴇʀs: `{bann}` \n Tᴏᴛᴀʟ ᴜsᴇʀs: `{all}`")
 
     
 @Riz.on(events.NewMessage(pattern="^/unbanall"))
@@ -156,20 +156,20 @@ async def _(e):
         if len(e.text) > 7:
             bc = rizoel[0]
             bc = int(bc)
-            text = "Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪᴛs ᴍɪssɪᴏɴ. ᴡᴇ ᴀʟʟ ᴀʟᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ sʜᴀᴅᴏᴡs ᴀs ɪ ʟᴇᴀᴠᴇ ᴛʜɪs ʀᴇᴀʟᴍ. ʙᴇ ᴀᴡᴀʀᴇ: ᴛʜᴇ sᴜʀɢᴇ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ'ꜱ ʟᴇᴀᴠɪɴɢ ʜᴀs ʙᴇᴇɴ ɴᴏᴛᴇᴅ"
+            text = " **Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪᴛs ᴍɪssɪᴏɴ. ᴡᴇ ᴀʟʟ ᴀʟᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ sʜᴀᴅᴏᴡs ᴀs ɪ ʟᴇᴀᴠᴇ ᴛʜɪs ʀᴇᴀʟᴍ. ʙᴇ ᴀᴡᴀʀᴇ: ᴛʜᴇ sᴜʀɢᴇ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ'ꜱ ʟᴇᴀᴠɪɴɢ ʜᴀs ʙᴇᴇɴ ɴᴏᴛᴇᴅ** "
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪᴛs ᴍɪssɪᴏɴ. ᴡᴇ ᴀʟʟ ᴀʟᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ sʜᴀᴅᴏᴡs ᴀs ɪ ʟᴇᴀᴠᴇ ᴛʜɪs ʀᴇᴀʟᴍ. ʙᴇ ᴀᴡᴀʀᴇ: ᴛʜᴇ sᴜʀɢᴇ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ'ꜱ ʟᴇᴀᴠɪɴɢ ʜᴀs ʙᴇᴇɴ ɴᴏᴛᴇᴅ")
+                await event.edit(" **Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪᴛs ᴍɪssɪᴏɴ. ᴡᴇ ᴀʟʟ ᴀʟᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ sʜᴀᴅᴏᴡs ᴀs ɪ ʟᴇᴀᴠᴇ ᴛʜɪs ʀᴇᴀʟᴍ. ʙᴇ ᴀᴡᴀʀᴇ: ᴛʜᴇ sᴜʀɢᴇ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ'ꜱ ʟᴇᴀᴠɪɴɢ ʜᴀs ʙᴇᴇɴ ɴᴏᴛᴇᴅ** ")
             except Exception as e:
                 await event.edit(str(e))   
         else:
             bc = e.chat_id
-            text = "Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪᴛs ᴍɪssɪᴏɴ. ᴡᴇ ᴀʟʟ ᴀʟᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ sʜᴀᴅᴏᴡs ᴀs ɪ ʟᴇᴀᴠᴇ ᴛʜɪs ʀᴇᴀʟᴍ. ʙᴇ ᴀᴡᴀʀᴇ: ᴛʜᴇ sᴜʀɢᴇ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ'ꜱ ʟᴇᴀᴠɪɴɢ ʜᴀs ʙᴇᴇɴ ɴᴏᴛᴇᴅ"
+            text = " **Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪᴛs ᴍɪssɪᴏɴ. ᴡᴇ ᴀʟʟ ᴀʟᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ sʜᴀᴅᴏᴡs ᴀs ɪ ʟᴇᴀᴠᴇ ᴛʜɪs ʀᴇᴀʟᴍ. ʙᴇ ᴀᴡᴀʀᴇ: ᴛʜᴇ sᴜʀɢᴇ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ'ꜱ ʟᴇᴀᴠɪɴɢ ʜᴀs ʙᴇᴇɴ ɴᴏᴛᴇᴅ** "
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪᴛs ᴍɪssɪᴏɴ. ᴡᴇ ᴀʟʟ ᴀʟᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ sʜᴀᴅᴏᴡs ᴀs ɪ ʟᴇᴀᴠᴇ ᴛʜɪs ʀᴇᴀʟᴍ. ʙᴇ ᴀᴡᴀʀᴇ: ᴛʜᴇ sᴜʀɢᴇ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ'ꜱ ʟᴇᴀᴠɪɴɢ ʜᴀs ʙᴇᴇɴ ɴᴏᴛᴇᴅ")
+                await event.edit(" **Tʜᴇ Rᴇᴀᴘᴇʀ ʜᴀs ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪᴛs ᴍɪssɪᴏɴ. ᴡᴇ ᴀʟʟ ᴀʟᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ sʜᴀᴅᴏᴡs ᴀs ɪ ʟᴇᴀᴠᴇ ᴛʜɪs ʀᴇᴀʟᴍ. ʙᴇ ᴀᴡᴀʀᴇ: ᴛʜᴇ sᴜʀɢᴇ ᴏғ ᴛʜᴇ Rᴇᴀᴘᴇʀ'ꜱ ʟᴇᴀᴠɪɴɢ ʜᴀs ʙᴇᴇɴ ɴᴏᴛᴇᴅ** ")
             except Exception as e:
                 await event.edit(str(e))   
 
